@@ -196,6 +196,7 @@ annotate!(0.12,2.5, text(L"\cdot",50,))
 annotate!(0.122,2.75, text("A",14,))
 
 SAVE_FIGS && savefig(plt, joinpath(@__DIR__, "..","output", "Figure13.pdf"))
+SAVE_FIGS && savefig(plt, joinpath(@__DIR__, "..","output", "Figure13.eps"))
 
 #Figure 14
 plt=plot(-4*log.(norun_betaGrid_coarse),[norun_gammaGrid_coarse[i] for i in norun_thresh],color=:black,lw=3,legend=false;fill=(0,:grey80,0.5))
@@ -206,6 +207,7 @@ annotate!(0.08,5, text("Prefers Runs",14,))
 annotate!(0.16,3, text("Prefers LoLR",14,))
 
 SAVE_FIGS && savefig(plt, joinpath(@__DIR__, "..","output", "Figure14.pdf"))
+SAVE_FIGS && savefig(plt, joinpath(@__DIR__, "..","output", "Figure14.eps"))
 
 
 
