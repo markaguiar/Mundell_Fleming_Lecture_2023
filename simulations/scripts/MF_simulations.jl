@@ -1,5 +1,10 @@
 # Simulations for IMF conference
 
+# Getting the pacakages 
+import Pkg
+Pkg.activate(joinpath(@__DIR__, ".."))
+Pkg.instantiate() 
+
 using Revise
 using LTBonds
 using ThreadsX 
